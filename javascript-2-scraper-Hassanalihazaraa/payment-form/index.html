@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation in JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preload" href="/fonts/camphor-ss/300-light.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+<div class="wrapper">
+    <h2>Confirm Purchase</h2>
+    <form>
+        <div class="form-row inline">
+            <div class="form-field">
+                <label>Name</label>
+                <input type="text" id="name-field" name="name" placeholder="John Smith">
+                <span class="error"></span>
+            </div>
+            <div class="form-field">
+                <label>Email Address</label>
+                <input type="email" id="email-field" name="email" placeholder="john.smith@example.com">
+                <span class="error"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Credit Card</label>
+                <input type="text" id="card-field" name="card" placeholder="Card number" maxlength="19">
+                <span class="error"></span>
+            </div>
+        </div>
+        <button>Submit Payment</button>
+    </form>
+</div>
+<script src="myvalidate.js"></script>
+</body>
+</html>
