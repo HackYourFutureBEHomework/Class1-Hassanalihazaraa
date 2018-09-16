@@ -129,7 +129,6 @@ WHERE todo_id = 2 or todo_id = 3;
 
 
 15- Adam decides he doesn't like the app and removes his account
-
 delete FROM todos
 WHERE user_id IN (select user_id from users where user_name = 'Adam');
 delete from users 
@@ -138,7 +137,6 @@ where user_name ='Adam';
 
 
 16- Beth marks all tasks with a health tag as done
-
 update todos
 set is_done = 'done'
 where user_id = 2;
@@ -162,7 +160,7 @@ insert into todos(todo_id,title,date_created,is_done,user_id)
 values(2,'use the todo app more often',datetime('now'),'not done',3);
 
 
+
+
 19- Finally, Adam and Beth decide to merge their users into one user called "Adam and Beth"
-
-
 couldn't find the answer.
